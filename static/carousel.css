@@ -1,10 +1,6 @@
 :root {
   --slick-dots-size: 55%;
 }
-
-body, html {
-  background-color: turquoise;
-}
 .wrapper{
   width:100%;
   padding-top: 20px;
@@ -13,24 +9,24 @@ body, html {
 h2{
   font-family:sans-serif;
 }
-.carousel{
+.carousel {
   width:20%;
   margin:0px auto;
   display: flex;
   flex-wrap: wrap;
 }
-.slick-slide{
+.carousel .slick-slide{
   margin:10px;
 }
-.slick-slide img{
+.carousel .slick-slide img{
   width: 100%;
   border: 2px solid black;
   margin: auto;
 }
-.slick-list {
+.carousel .slick-list {
   order: 1;
 }
-.arrow {
+.carousel .arrow {
   width: 20%;
   height: 20px;
   right: 0px;
@@ -41,13 +37,13 @@ h2{
   align-items: center;
   justify-content: center;
 }
-.prev {
+.carousel .prev {
   margin-left: var(--slick-dots-size); 
 }
-.next {
+.carousel .next {
   margin-left: 2%;
 }
-.slick-dots{
+.carousel .slick-dots{
   bottom: 0px;
   left: 0px;
   width: var(--slick-dots-size);
@@ -56,17 +52,17 @@ h2{
   align-items: center;
   order: 3;
 }
-.slick-dots li {
+.carousel .slick-dots li {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.dot {
+.carousel .dot {
   width: 10px;
   height: 10px;
   border: 1px solid black;
   border-radius: 50%;
 }
-.slick-active div {
+.carousel .slick-active div {
   background-color: black;
 }
